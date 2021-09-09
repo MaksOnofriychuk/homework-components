@@ -15,19 +15,19 @@ const Counters = () => {
     setCounters(newCounters);
   };
   const hendleIncrement = (counterId) => {
-     const newCountersw = [...counters]
-     console.log(newCountersw);
-     const www = newCountersw.findIndex((item) => item.id === counterId)
-     console.log(www);
-     newCountersw[www].value++;
-     setCounters(newCountersw)
+    const newCountersw = [...counters];
+    console.log(newCountersw);
+    const www = newCountersw.findIndex((item) => item.id === counterId);
+    console.log(www);
+    newCountersw[www].value++;
+    setCounters(newCountersw);
   };
   const hendDecrement = (counterId) => {
-   const newCountersq = [...counters]
-     const www = newCountersq.findIndex((item) => item.id === counterId)
-     console.log(www);
-     newCountersq[www].value--;
-     setCounters(newCountersq)
+    const newCountersq = [...counters];
+    const www = newCountersq.findIndex((item) => item.id === counterId);
+    console.log(www);
+    newCountersq[www].value--;
+    setCounters(newCountersq);
   };
   const handleReset = () => setCounters(initialState);
 
